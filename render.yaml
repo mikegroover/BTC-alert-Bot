@@ -1,0 +1,10 @@
+
+services:
+  - type: worker
+    name: btc-alert
+    runtime: python
+    buildCommand: ""
+    startCommand: "python3 main.py"
+    envVars:
+      - key: BREVO_API_KEY
+        value: your_brevo_api_key_here
